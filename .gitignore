@@ -1,0 +1,4 @@
+*.jpg
+/log/*.*
+/tutor
+/__pycache__/*
