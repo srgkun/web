@@ -1,4 +1,5 @@
 *.jpg
-/log/*.*
+/log/nginx.*
 /tutor
 /__pycache__/*
+*.sqlite3
