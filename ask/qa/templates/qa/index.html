@@ -1,0 +1,14 @@
+{% if latest_question_list %}
+<style>
+ul {
+    list-style-type: none;
+}
+</style>
+<ul>
+    {% for question in latest_question_list %}
+        <li><a href="{% url 'one_question' question.id %}">{{ question.title }}</a> {{ question.added_at }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+    <p>No question are available.</p>
+{% endif %}
